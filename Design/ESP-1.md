@@ -10,9 +10,9 @@
 
 *NO CHANGES THOUGHOUT 1NF - 3NF*
 
-### END
+### ERD
 
-> TODO: **image here**
+![CustomerOrders](./ESP.png)
 
 ## Customer Order View 
 
@@ -37,6 +37,18 @@ OrderDetail:**<span Class="md"><b class="pk"><u class="fk">OrderNumber</u><u cla
 **Order:**<span Class="md"><b class="pk">OrderNumber</b>, <u class="fk">CustomerNumber</u>, Date,SubTotal, GST, Total</span>
 
 **Customer** <span Class="md"><b class="pk">CustomerNumber</b>, FirstName, LastName, Address, city, Province, PostalCode, Phone</span>
+
+### Final Entities
+
+**Order:**<span Class="md"><b class="pk">OrderNumber</b>, <u class="fk">CustomerNumber</u>, Date,SubTotal, GST, Total</span>
+
+**Customer** <span Class="md"><b class="pk">CustomerNumber</b>, FirstName, LastName, Address, city, Province, PostalCode, Phone</span>
+
+**OrderDetail:**<span Class="md"><b class="pk"><u class="fk">OrderNumber</u><u class="fk">ItemNumber</u></b>, Quantity,SellingPrice, Amount</span>
+
+**Item**<span Class="md"><b class="pk">ItemNumber</b>,Description, CurrentPrice</span>
+
+
 
 ### ERD
 
